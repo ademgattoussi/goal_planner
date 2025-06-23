@@ -1,0 +1,22 @@
+.goals-square{
+    height: 200px;
+    width: 200px;
+    border-width: 5px !important;
+    border-color: white !important;
+    border-radius: 10%;
+    background-color: transparent;
+    box-shadow: 0 0 10px white;
+    span{
+        font-size: 70px;
+    }
+    .active-text{
+        color: red;
+        text-shadow: 2px 2px 5px red;
+        font-size: large;
+    }
+    .achieved-text{
+        color: green;
+        text-shadow: 2px 2px 5px green;
+        font-size: large;
+    }
+}

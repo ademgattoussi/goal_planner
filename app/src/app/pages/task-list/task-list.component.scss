@@ -1,0 +1,68 @@
+.text-neon {
+    color: #5DADE2; /* Softer Blue */
+    text-shadow: 0 0 2px #5DADE2, 0 0 4px #5DADE2;
+}
+
+.bg-neon {
+    background-color: #5DADE2; /* Softer Blue */
+    box-shadow: 0 0 5px #5DADE2, 0 0 10px #5DADE2;
+}
+
+.btn-neon {
+    background-color: #5DADE2;
+    border: none;
+    color: white;
+    box-shadow: 0 0 3px #5DADE2, 0 0 6px #5DADE2;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background-color: #3498DB; /* Slightly darker blue */
+    box-shadow: 0 0 8px #3498DB, 0 0 16px #3498DB;
+}
+
+.neon-border {
+    border: 2px solid #5DADE2; /* Softer Blue border */
+    box-shadow: 0 0 3px #5DADE2, 0 0 6px #5DADE2;
+}
+
+.task-card {
+    background-color: #222; /* Slightly lighter background for contrast */
+    box-shadow: 0 0 5px #5DADE2;
+}
+
+.task-item {
+    border-left: 4px solid #5DADE2;
+    box-shadow: 0 0 3px #5DADE2;
+}
+
+.btn-outline-danger {
+    border-color: #5DADE2;
+    color: #5DADE2;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+    background-color: #5DADE2;
+    color: white;
+    box-shadow: 0 0 5px #5DADE2, 0 0 10px #5DADE2;
+}
+
+.neon-input {
+    border-color: #5DADE2;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 3px #5DADE2;
+    transition: all 0.3s ease;
+}
+
+.neon-input:focus {
+    border-color: #3498DB;
+    background-color: #333;
+    box-shadow: 0 0 6px #3498DB, 0 0 12px #3498DB;
+}
+
+.neon-card {
+    background-color: #222 !important;
+    box-shadow: 0 0 5px #5DADE2, 0 0 10px #5DADE2;
+}

@@ -1,0 +1,16 @@
+// _variables.scss
+$primary-red: #e74c3c;
+$dark-red: #c0392b;
+$white: #ffffff;
+$light-gray: #f5f5f5;
+$medium-gray: #e0e0e0;
+$dark-gray: #333333;
+
+// Mixins
+@mixin box-shadow($x: 0, $y: 2px, $blur: 10px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}

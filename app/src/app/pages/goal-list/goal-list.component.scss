@@ -1,0 +1,91 @@
+/* Neon Blue Theme */
+body {
+  background-color: #121212; /* Deep dark background */
+  color: #ffffff;
+}
+
+/* Button Styles */
+.neon-button {
+  background-color: #1e90ff; /* Neon blue */
+  border: 2px solid #1e90ff;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.8), 0 0 20px rgba(30, 144, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  background-color: transparent;
+  color: #1e90ff;
+  box-shadow: 0 0 20px rgba(30, 144, 255, 1), 0 0 40px rgba(30, 144, 255, 1);
+}
+
+/* Card Styles */
+.neon-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.2), 0 0 30px rgba(30, 144, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.neon-card:hover {
+  box-shadow: 0 0 40px rgba(30, 144, 255, 0.8), 0 0 60px rgba(30, 144, 255, 0.6);
+}
+
+/* Progress bar */
+.neon-progress-bar {
+  background-color: #32cd32; /* Neon green */
+  box-shadow: 0 0 10px rgba(50, 205, 50, 0.5);
+}
+
+/* Milestone items */
+.neon-item {
+  background-color: #1e1e1e;
+  color: white;
+  border-left: 5px solid #1e90ff;
+  transition: all 0.3s ease;
+}
+
+.neon-item:hover {
+  background-color: #2c2c2c;
+  border-left: 5px solid #32cd32;
+}
+
+/* Checkbox and Labels */
+.neon-checkbox {
+  accent-color: #1e90ff; /* Neon blue */
+}
+
+.neon-text {
+  color: #32cd32; /* Neon green for milestone names */
+  text-shadow: 0 0 5px rgba(50, 205, 50, 0.6);
+}
+
+.neon-badge {
+  background-color: #1e90ff; /* Neon blue for status */
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.6), 0 0 12px rgba(30, 144, 255, 0.8);
+}
+
+.neon-badge.bg-success {
+  background-color: #32cd32; /* Neon green for completed */
+}
+
+.neon-badge.bg-warning {
+  background-color: #ff6347; /* Neon orange for in-progress */
+}
+
+/* Delete Button */
+.neon-button-delete {
+  border: 2px solid #ff6347;
+  color: #ff6347;
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.8), 0 0 20px rgba(255, 99, 71, 0.8);
+}
+
+.neon-button-delete:hover {
+  background-color: transparent;
+  color: #ff6347;
+  box-shadow: 0 0 20px rgba(255, 99, 71, 1), 0 0 40px rgba(255, 99, 71, 1);
+}
+
+

@@ -1,0 +1,19 @@
+<div class="reminders-card">
+  <h4 class="title">Upcoming Deadlines</h4>
+
+  <div *ngFor="let task of tasks" class="task-item">
+    <div class="left">
+      <i class="fas fa-check-circle check-icon"></i>
+      <div class="text-group">
+        <span class="task-name">{{ task.taskName }}</span>
+        <span class="due-date">
+          <i class="far fa-calendar-alt"></i>
+          {{ task.dueDate | date: getDueDateLabel(task.dueDate) }}
+        </span>
+      </div>
+    </div>
+    <span class="priority-badge" [ngClass]="getPriorityClass(task)">
+      {{ getPriorityLabel(task) }}
+    </span>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="goal-form-container d-flex justify-content-center align-items-start mt-5 pt-5 pl-5">
+  <form [formGroup]="goalForm" class="goal-form w-100" style="max-width: 900px;">
+    <div class="row">
+      <!-- Left Side: Goal Info -->
+      <div class="col-md-7">
+        <div class="mb-3">
+          <label class="form-label text-light">Goal Title</label>
+          <input type="text" formControlName="goalName" class="form-control dark-input" required />
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label class="form-label text-light">Start Date</label>
+              <input type="date" [min]="today" formControlName="startDate" class="form-control dark-input" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label class="form-label text-light">Target Date</label>
+              <input type="date" [min]="today" formControlName="endDate" class="form-control dark-input" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label text-light">Description</label>
+          <textarea formControlName="description" class="form-control dark-input" rows="4"></textarea>
+        </div>
+      </div>
+
+      <!-- Right Side: Milestones -->
+      <div class="col-md-5" formArrayName="milestones">
+        @for (item of milestoneList.controls; track $index) {
+          <ng-container [formGroupName]="$index">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-2">
+                  <label class="form-label text-light">Milestone</label>
+                  <input type="text" formControlName="milestoneName" class="form-control dark-input" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mb-2">
+                  <label class="form-label text-light">Target Date</label>
+                  <input type="date" [min]="today" formControlName="targetDate" class="form-control dark-input" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label class="form-label text-light">Description</label>
+                  <textarea formControlName="description" class="form-control dark-input" rows="2"></textarea>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        }
+
+        <div class="text-end mt-3">
+          <button type="button" class="btn btn-outline-light btn-sm" (click)="addMilestone()">
+            <i class="fas fa-plus me-1"></i> Add Milestone
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="row pt-4 text-center">
+      <div class="col-12">
+        <button type="button" class="btn btn-primary px-4" (click)="onSubmit()">
+          Create Goal
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

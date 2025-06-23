@@ -1,0 +1,77 @@
+.reminders-card {
+  background-color: #111827; // Dark background
+  border-radius: 10px;
+  padding: 16px;
+  color: #fff;
+  width: 100%;
+//   max-width: 80%;
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #60a5fa;
+  }
+
+  .task-item {
+    background-color: #1f2937;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .check-icon {
+      color: #4ade80;
+      margin-right: 10px;
+    }
+
+    .text-group {
+      display: flex;
+      flex-direction: column;
+
+      .task-name {
+        font-weight: 600;
+      }
+
+      .due-date {
+        font-size: 0.85rem;
+        color: #9ca3af;
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .priority-badge {
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+
+      &.high {
+        background-color: #ec4899;
+        color: white;
+      }
+
+      &.medium {
+        background-color: #0ea5e9;
+        color: white;
+      }
+
+      &.low {
+        background-color: #4b5563;
+        color: white;
+      }
+    }
+  }
+}
